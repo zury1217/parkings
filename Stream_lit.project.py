@@ -19,7 +19,7 @@ st.set_page_config(page_title="Parking Meters",
 
 
 def read_data():
-    df = pd.read_csv("/Users/zury/PycharmProjects/pythonProject/FINAL PROJECT/Parking_Meters.csv")
+    df = pd.read_csv("Parking_Meters.csv")
 
     # Group by street
     df['STREET'] = df['STREET'].str.extract(r'([^\d]+) ST')
@@ -161,7 +161,7 @@ def generate_line_chart(df):
 
 
 def main():
-    st.image("/Users/zury/PycharmProjects/pythonProject/FINAL PROJECT/cover.png", width=200)
+    st.image("cover.png", width=200)
     st.title("Parking Meters")
 
     # sidebar
